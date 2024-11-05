@@ -47,14 +47,7 @@ public class Handle : MonoBehaviour
             //extendDelta = weaponActive ? -Mathf.Abs(extendDelta) : Mathf.Abs(extendDelta);
             extendDelta = -extendDelta;
             Debug.Log("Spacebar pressed. New extendDelta: " + extendDelta);
-            if (weaponActive)
-            {
-                audioSource.PlayOneShot(collapseSound, 1.0F);
-            }
-            else
-            {
-                audioSource.PlayOneShot(collapseSound, 1.0F);
-            }
+            audioSource.Play();
         }
 
 
